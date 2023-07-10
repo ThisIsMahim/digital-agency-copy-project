@@ -1,23 +1,29 @@
+/* shared style */
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Work Sans', sans-serif;
 }
+/* header related style */
 #top{
     display: flex;
     justify-content: space-evenly;
-    background-color: grey;
+    background-color: #737171;
     height: max-content;
     align-items: center;
     height: 8vw;
+    margin: 0;
 }
 .logo-section{
     display: flex;
     padding: 10px;
 }
+/* modifying menus */
 .menu-list{
     list-style: none;
     display: flex;
     gap: 1px;
+    margin-right: 15px;
 }
 
 .menu-link{
@@ -32,4 +38,161 @@ body{
 }
 .menu-link:hover{
     background-color: antiquewhite;
+}
+/* banner related style */
+.banner-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("image/background.jpg"), linear-gradient(rgb(80, 79, 79),rgb(69, 69, 69));
+    background-blend-mode: overlay;
+    background-size:cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 100px 0px;
+}
+.banner-text-container *{
+    margin: 0;
+}
+.banner-text-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 50%;
+    overflow:hidden;
+}
+.banner-tittle h1{
+    font-size: 85px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+.tomato{
+    color: tomato;
+}
+.banner-description{
+    color: white;
+    font-size: 20px;
+}
+.banner-btns{
+    display: flex;
+    gap: 15px;
+    align-self: center;
+}
+.banner-btns button{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner-btn-1{
+    background-color: rgb(203, 52, 26);
+    color: white;
+}
+.banner-btn-1:hover{
+    transform: scale(1.05);
+}
+.banner-btn-2:hover{
+    transform: scale(1.05);
+}
+/* service section design */
+#services{
+    display: flex;
+    background-color: black;
+}
+.service-text-container{
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.service-text-container>*{
+    margin: 0;
+    color: white;
+}
+
+.more-details-btn{
+    font-size: 20px;
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(244, 48, 48);
+    color: white;
+}
+.service-tittle{
+    font-size: 38px;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.author-img{
+    border-radius: 50%;
+    display: block;
+}
+.details{
+    display:flex;
+    align-items: center;
+    gap: 100px;
+}
+.author-details{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-right: 1px solid red;
+    gap:10px;
+    width: 40%;
+}
+.service-banner-section{
+    width: 50%;
+}
+.service-btn{   
+     font-size: 20px;
+    display: inline-block;
+    width: max-content;
+    height: max-content;
+    padding: 10px;
+    border: 2px solid rgb(32, 163, 183);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(199, 46, 35);
+    color: white;
+    align-self: center;
+}
+.service-desc,.service-list{
+    width: 70%;
+}
+.service-list{
+    padding-left: 22px;
+}
+.service-desc{
+    padding: 0;
+}
+.service-cards-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.top-cards,.bottom-cards{
+    display: flex;
+    height: 50%;
+    /* position: absolute; */
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 10px grey-;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
